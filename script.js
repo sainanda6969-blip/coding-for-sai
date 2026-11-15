@@ -90,7 +90,7 @@ function drawCircle(x, y, r, color = '#fff') {
 }
 
 function drawNet() {
-  ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+  ctx.strokeStyle = 'rgba(200,200,200,0.06)';
   ctx.lineWidth = 2;
   ctx.setLineDash([8, 10]);
   ctx.beginPath();
