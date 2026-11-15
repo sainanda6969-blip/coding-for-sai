@@ -45,7 +45,7 @@ const computer = {
   y: (HEIGHT - PADDLE_HEIGHT) / 2,
   width: PADDLE_WIDTH,
   height: PADDLE_HEIGHT,
-  maxSpeed: 4.2
+  maxSpeed: 5
 };
 
 const ball = {
