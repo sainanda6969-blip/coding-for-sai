@@ -111,12 +111,37 @@ function render() {
   // Net
   drawNet();
 
-  // Paddles
-  drawRect(player.x, player.y, player.width, player.height, '#00e0a1');
-  drawRect(computer.x, computer.y, computer.width, computer.height, '#66d9b2');
+  // Neon Player Paddle - Pink
+ctx.shadowBlur = 20;
+ctx.shadowColor = '#ff4fd8';
 
-  // Ball
-  drawCircle(ball.x, ball.y, ball.r, '#e6eef8');
+drawRect(
+    player.x, player.y,
+    player.width, player.height,
+    '#ff4fd8'
+);
+
+// Neon Computer Paddle - Blue
+ctx.shadowColor = '#168cff';
+
+drawRect(
+    computer.x, computer.y,
+    computer.width, computer.height,
+    '#168cff'
+);
+
+// Neon Ball - White Glow
+ctx.shadowColor = '#ffffff';
+ctx.shadowBlur = 25;
+
+drawCircle(
+    ball.x, ball.y,
+    ball.r,
+    '#ffffff'
+);
+
+// Reset Glow
+ctx.shadowBlur = 0;
 
   // If paused overlay
   if (paused) {
